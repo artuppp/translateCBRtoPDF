@@ -54,4 +54,5 @@ for i in range(1,len(files) + 1):
         img = Image.open(image)
         images.append(img)
 
+# PART 5 GENERATE PDF
 images[0].save("output_PDF.pdf", "PDF" ,resolution=100.0, save_all=True, append_images=images[1:])
